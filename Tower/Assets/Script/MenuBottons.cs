@@ -7,7 +7,7 @@ public class MenuBottons : MonoBehaviour {
 
     public void NewGame()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("floor1");
     }
 
     public void QuitGame()
