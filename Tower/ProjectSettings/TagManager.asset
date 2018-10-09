@@ -6,6 +6,7 @@ TagManager:
   tags:
   - EnemyBullet
   - bullet
+  - Torch
   layers:
   - Default
   - TransparentFX
