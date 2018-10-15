@@ -11,24 +11,22 @@ public class movement : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
+        timer += Time.deltaTime;
         float x = Input.GetAxis("Horizontal");
         float y = Input.GetAxis("Vertical");
         Vector2 velocity = new Vector2(x, y);
-        GetComponent<Rigidbody2D>().velocity = velocity * speed ;
+        GetComponent<Rigidbody2D>().velocity = velocity * speed;
         if (Input.GetKeyDown(KeyCode.Space) && timer > 0.2f)
         {
             timer = 0;
+            speed = dashSpeed;
+        }
+        else if (timer > 0.3f)
+        {
+            
+            speed = StartSpeed;
 
         }
-        if (timer < 0.5f)
-        {
-            //increase speed
-            
-            
-        }
-        else
-        {
-            //reset speed
-        }
+      
     }
 }
