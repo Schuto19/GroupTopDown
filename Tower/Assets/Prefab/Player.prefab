@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 114651242942976636}
   - component: {fileID: 114272082415269100}
   - component: {fileID: 114186623361039950}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2
+  orthographic size: 4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -193,7 +193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f6a8b306675b20499584bbd50fb3da2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 10
+  hp: 20
   hpText: {fileID: 0}
   HpBar: {fileID: 0}
 --- !u!114 &114651242942976636
@@ -207,8 +207,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d26437696d0d294d80367dcbeb153eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
-  dashSpeed: 5
+  speed: 5
+  dashSpeed: 8
   StartSpeed: 3
 --- !u!212 &212127184611792834
 SpriteRenderer:
@@ -244,7 +244,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 0, g: 1, b: 0.15520024, a: 1}
   m_FlipX: 0
