@@ -27034,10 +27034,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1277369631}
   - component: {fileID: 1277369630}
-  - component: {fileID: 1277369634}
   - component: {fileID: 1277369633}
   - component: {fileID: 1277369632}
   - component: {fileID: 1277369635}
+  - component: {fileID: 1277369634}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -27079,9 +27079,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0.28591025, g: 0.7830189, b: 0.23268957, a: 1}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 6d800e97b72ef374d916228e630c8846, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -27098,8 +27098,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1277369629}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.54, y: -3.63, z: -0.547089}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalPosition: {x: -4.394, y: -3.267, z: -0.547089}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 28946692}
   m_Father: {fileID: 0}
@@ -27117,6 +27117,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
+  dashSpeed: 5
+  StartSpeed: 3
 --- !u!50 &1277369633
 Rigidbody2D:
   serializedVersion: 4
@@ -27137,8 +27139,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &1277369634
-CircleCollider2D:
+--- !u!60 &1277369634
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -27150,8 +27152,40 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.1
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 0.2, y: 0.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.1482091, y: 0.058726788}
+      - {x: 0.22680092, y: 0.10275924}
+      - {x: 0.18228912, y: 0.16667676}
+      - {x: 0.2452482, y: 0.22633171}
+      - {x: 0.12544894, y: 0.23484671}
+      - {x: 0.07573652, y: 0.22391558}
+      - {x: 0.026503325, y: 0.2755146}
+      - {x: -0.15244174, y: 0.16946137}
+      - {x: -0.15196228, y: 0.06436658}
+      - {x: -0.058107615, y: -0.060845613}
+      - {x: -0.21022677, y: -0.09960151}
+      - {x: -0.16714668, y: -0.33008945}
+      - {x: -0.07468772, y: -0.32210493}
+      - {x: -0.07963443, y: -0.4909159}
+      - {x: -0.07963443, y: -0.48428762}
+      - {x: 0.1202178, y: -0.49026835}
+      - {x: 0.090750456, y: -0.3360716}
+      - {x: 0.19911695, y: -0.3107003}
+      - {x: 0.20261824, y: -0.20756018}
+      - {x: 0.22677481, y: -0.11744833}
+      - {x: 0.1750462, y: -0.06967509}
+      - {x: 0.06772137, y: -0.08096743}
+      - {x: 0.14489508, y: 0.01230824}
 --- !u!114 &1277369635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52160,7 +52194,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2035046112
 MonoBehaviour:
   m_ObjectHideFlags: 0
