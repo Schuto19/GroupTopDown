@@ -22,7 +22,8 @@ GameObject:
   - component: {fileID: 212885761368830324}
   - component: {fileID: 50460734739809290}
   - component: {fileID: 58102333375393148}
-  m_Layer: 12
+  - component: {fileID: 114569101120111528}
+  m_Layer: 10
   m_Name: KillerFrost
   m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
@@ -77,6 +78,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &114569101120111528
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1894760555536862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bb0203c2349ad749a60ad7edbbb87e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212885761368830324
 SpriteRenderer:
   m_ObjectHideFlags: 1

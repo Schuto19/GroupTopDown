@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212883472160361144}
   - component: {fileID: 50350924412725350}
   - component: {fileID: 58046345205564604}
-  m_Layer: 12
+  m_Layer: 10
   m_Name: Fireball
   m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
