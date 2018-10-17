@@ -2178,8 +2178,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HP: 5
-  prefab: {fileID: 0}
-  prefab2: {fileID: 0}
+  prefab: {fileID: 1185167458467282, guid: 4e493604203fb44489267c74919d33d8, type: 2}
+  prefab2: {fileID: 1776125652157508, guid: 8dd134c115e897346adfb4bc0376ef00, type: 2}
 --- !u!95 &826570656
 Animator:
   serializedVersion: 3
@@ -2509,6 +2509,7 @@ GameObject:
   - component: {fileID: 895809046}
   - component: {fileID: 895809037}
   - component: {fileID: 895809043}
+  - component: {fileID: 895809047}
   - component: {fileID: 895809042}
   - component: {fileID: 895809041}
   - component: {fileID: 895809040}
@@ -2524,7 +2525,8 @@ GameObject:
 --- !u!114 &895809037
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 114445592527082918, guid: 59bd100d7021780489cf22eea33906e3,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 895809036}
   m_Enabled: 1
@@ -2534,14 +2536,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 1690892045972250, guid: 6cd2e4e36bea83e4fb659aaddcd653db, type: 2}
   shootSpeed: 10
-  Mp: 10
+  Mp: 30
+  MaxMp: 30
   MpText: {fileID: 1616287158}
   MpBar: {fileID: 1013548631}
 --- !u!95 &895809038
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 95657738133618790, guid: 59bd100d7021780489cf22eea33906e3,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 895809036}
   m_Enabled: 1
@@ -2618,7 +2622,8 @@ MonoBehaviour:
 --- !u!114 &895809041
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 114345871984825564, guid: 59bd100d7021780489cf22eea33906e3,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 895809036}
   m_Enabled: 1
@@ -2727,7 +2732,8 @@ Transform:
 --- !u!114 &895809046
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 114563540449927876, guid: 59bd100d7021780489cf22eea33906e3,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 895809036}
   m_Enabled: 1
@@ -2736,8 +2742,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 20
+  Maxhp: 20
   hpText: {fileID: 737952537}
   HpBar: {fileID: 179561020}
+--- !u!114 &895809047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 895809036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d33f0cd29ab7754fb3561d868a8e33e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 0}
 --- !u!1 &928439720
 GameObject:
   m_ObjectHideFlags: 0
@@ -3103,9 +3122,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1410268715}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 10
+  m_MaxValue: 30
   m_WholeNumbers: 0
-  m_Value: 10
+  m_Value: 30
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []

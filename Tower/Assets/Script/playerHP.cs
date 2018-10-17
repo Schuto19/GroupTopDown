@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class playerHP : MonoBehaviour {
     public int hp = 10;
+    public int Maxhp = 10;
     public Text hpText;
     public Slider HpBar;
     
@@ -28,7 +29,7 @@ public class playerHP : MonoBehaviour {
             }
 
         }
-        if (collision.gameObject.tag == "Heart" && hp < 20)
+        if (collision.gameObject.tag == "Heart" && hp < Maxhp)
         {
             hp++;
             HpBar.GetComponent<Slider>().value = hp;
