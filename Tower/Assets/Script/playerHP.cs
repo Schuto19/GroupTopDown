@@ -26,6 +26,14 @@ public class playerHP : MonoBehaviour {
             {
                 SceneManager.LoadScene("lose");
             }
+
+        }
+        if (collision.gameObject.tag == "Heart" && hp < 20)
+        {
+            hp++;
+            HpBar.GetComponent<Slider>().value = hp;
+            hpText.GetComponent<Text>().text = "HP: " + hp;
+            Destroy(collision.gameObject);
         }
     }
 }

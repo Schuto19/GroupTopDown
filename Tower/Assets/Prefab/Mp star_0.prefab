@@ -20,8 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4259782780000148}
   - component: {fileID: 212916725916497498}
+  - component: {fileID: 114259925102417512}
   - component: {fileID: 95617903904606266}
   - component: {fileID: 60527651885914464}
+  - component: {fileID: 50906178293633756}
   m_Layer: 0
   m_Name: Mp star_0
   m_TagString: MpStar
@@ -42,6 +44,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50906178293633756
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1776125652157508}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!60 &60527651885914464
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -100,6 +122,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114259925102417512
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1776125652157508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97f87efa8efa36b42a197478e49d76d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212916725916497498
 SpriteRenderer:
   m_ObjectHideFlags: 1

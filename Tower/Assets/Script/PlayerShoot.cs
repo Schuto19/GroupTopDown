@@ -45,6 +45,7 @@ public class PlayerShoot : MonoBehaviour {
         if (collision.gameObject.tag == "MpStar")
         {
             Mp++;
+            MpBar.GetComponent<Slider>().value = Mp;
             MpText.GetComponent<Text>().text = "MP: " + Mp;
             Destroy(collision.gameObject);
         }

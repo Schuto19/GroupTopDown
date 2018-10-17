@@ -5,8 +5,10 @@ using UnityEngine;
 public class EnemyHP : MonoBehaviour {
 
     public int HP = 1;
+    public GameObject prefab;
+    public GameObject prefab2;
 
-        private void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "bullet")
         {
@@ -14,6 +16,8 @@ public class EnemyHP : MonoBehaviour {
             if(HP <= 0)
             {
                 Destroy(gameObject);
+                GameObject Heart = (GameObject)Instantiate(prefab, transform.position, Quaternion.identity);
+                GameObject MpStar = (GameObject)Instantiate(prefab2, transform.position, Quaternion.identity);
             }
         }
     }
