@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212394494397613788}
   - component: {fileID: 50428836997549324}
   - component: {fileID: 58470570199253076}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: FaceMagic
   m_TagString: bullet
   m_Icon: {fileID: 0}

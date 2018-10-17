@@ -17,9 +17,10 @@ public class EnemyHP : MonoBehaviour {
         if(collision.gameObject.tag == "bullet")
         {
             HP--;
-            if (collision.gameObject.tag == "Sword")
+            //Change to comparison. If bullet hp--. If FaceMagic hp -=4.
+            if (collision.gameObject.name == "FaceMagic")
             {
-                HP += 5;
+                HP -= 4;
             }
             if(HP <= 0)
             {
