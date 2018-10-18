@@ -85009,7 +85009,8 @@ Prefab:
       propertyPath: CoinCounter
       value: 
       objectReference: {fileID: 853171308}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114705064828936620, guid: 59bd100d7021780489cf22eea33906e3, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 59bd100d7021780489cf22eea33906e3, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &2034565568
