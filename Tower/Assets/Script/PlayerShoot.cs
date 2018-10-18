@@ -56,9 +56,16 @@ public class PlayerShoot : MonoBehaviour {
             shootDir.Normalize();
             shootDir = shootDir * shootSpeed;
             //when calculating a vector from a to b always do destination - start position
-            GameObject bullet = (GameObject)Instantiate(prefab, transform.position, Quaternion.identity);
+            GameObject bullet = (GameObject)Instantiate(prefab2, transform.position, Quaternion.identity);
             bullet.GetComponent<Rigidbody2D>().velocity = shootDir;
             Destroy(bullet, 1.0f);
+        }
+
+        if (Mp > MaxMp)
+        {
+            Mp = MaxMp;
+            MpBar.GetComponent<Slider>().value = Mp;
+            MpText.GetComponent<Text>().text = "MP: " + Mp;
         }
     }
 

@@ -16,6 +16,16 @@ public class playerHP : MonoBehaviour {
         HpBar.GetComponent<Slider>().value = hp;
     }
 
+    void Update()
+    {
+        if (hp > Maxhp)
+        {
+            hp = Maxhp;
+            HpBar.GetComponent<Slider>().value = hp;
+            hpText.GetComponent<Text>().text = "HP: " + hp;
+        }
+    }
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Enemy")
@@ -31,7 +41,7 @@ public class playerHP : MonoBehaviour {
         }
         if (collision.gameObject.tag == "Heart" && hp < Maxhp)
         {
-            hp++;
+            hp+= 2;
             HpBar.GetComponent<Slider>().value = hp;
             hpText.GetComponent<Text>().text = "HP: " + hp;
             Destroy(collision.gameObject);

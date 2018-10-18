@@ -14,14 +14,14 @@ public class EnemyHP : MonoBehaviour {
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "bullet")
+        if (collision.gameObject.tag == "Bullet2")
+        {
+            HP -= 4;
+        }
+        if (collision.gameObject.tag == "bullet")
         {
             HP--;
             //Change to comparison. If bullet hp--. If FaceMagic hp -=4.
-            if (collision.gameObject.name == "FaceMagic")
-            {
-                HP -= 4;
-            }
             if(HP <= 0)
             {
                 Destroy(gameObject);
