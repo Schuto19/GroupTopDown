@@ -10,7 +10,7 @@ public class LightToggle : MonoBehaviour {
     //corresponding canvas you want to make disappear.
     public GameObject Darkness;
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
         //If player collides with object tagged torch,
         //the smaller FOV canvas is disabled to increase
         //visibilty, and the torch will be destroyed.

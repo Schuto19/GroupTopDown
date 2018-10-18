@@ -37,6 +37,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4955220821314526}
   - component: {fileID: 212127184611792834}
+  - component: {fileID: 114136117450746382}
   - component: {fileID: 114563540449927876}
   - component: {fileID: 114445592527082918}
   - component: {fileID: 50064894235869666}
@@ -214,6 +215,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114136117450746382
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1871289168554704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 852209e23a3854d4ebb42d357a80cfca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinCount: 0
+  CoinCounter: {fileID: 0}
 --- !u!114 &114345871984825564
 MonoBehaviour:
   m_ObjectHideFlags: 1

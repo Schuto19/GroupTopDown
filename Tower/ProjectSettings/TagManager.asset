@@ -13,6 +13,7 @@ TagManager:
   - MpStar
   - Heart
   - Bullet2
+  - coin
   layers:
   - Default
   - TransparentFX
@@ -26,7 +27,7 @@ TagManager:
   - PlayerBullet
   - EnemyBullet
   - EnemyLayer
-  - 
+  - coin
   - 
   - 
   - 
