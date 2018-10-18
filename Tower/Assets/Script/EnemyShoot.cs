@@ -32,9 +32,9 @@ public class EnemyShoot : MonoBehaviour
 
             //shoot because the player is close to the enemy
             Vector3 shootDir = playerPosition - transform.position;
-            
+            shootDir.Normalize();
             GameObject bullet = (GameObject)Instantiate(prefab, transform.position, Quaternion.identity);
-            bullet.GetComponent<Rigidbody2D>().velocity = shootDir;
+            bullet.GetComponent<Rigidbody2D>().velocity = shootDir  * shootSpeed;
             Destroy(bullet, 1.0f);
 
         }
