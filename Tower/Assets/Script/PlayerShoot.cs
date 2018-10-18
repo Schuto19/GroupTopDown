@@ -43,7 +43,7 @@ public class PlayerShoot : MonoBehaviour {
 
         }
 
-        if (Input.GetButton("Fire2") && timer > 0.8f && Mp > 0)
+        if (Input.GetButton("Fire2") && timer > 0.8f && Mp > 2)
         {
             Mp -= 3;
             MpBar.GetComponent<Slider>().value = Mp;
@@ -64,6 +64,14 @@ public class PlayerShoot : MonoBehaviour {
         if (Mp > MaxMp)
         {
             Mp = MaxMp;
+            MpBar.GetComponent<Slider>().value = Mp;
+            MpText.GetComponent<Text>().text = "MP: " + Mp;
+        }
+
+        if (Mp < MaxMp && timer > 5.0f)
+        {
+            timer = 0;
+            Mp++;
             MpBar.GetComponent<Slider>().value = Mp;
             MpText.GetComponent<Text>().text = "MP: " + Mp;
         }

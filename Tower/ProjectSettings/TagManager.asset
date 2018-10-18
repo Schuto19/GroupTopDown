@@ -12,6 +12,7 @@ TagManager:
   - Level
   - MpStar
   - Heart
+  - Bullet2
   layers:
   - Default
   - TransparentFX

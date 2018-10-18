@@ -21,10 +21,11 @@ GameObject:
   - component: {fileID: 4382751849984048}
   - component: {fileID: 212394494397613788}
   - component: {fileID: 50428836997549324}
+  - component: {fileID: 114369397586394676}
   - component: {fileID: 58470570199253076}
   m_Layer: 9
   m_Name: FaceMagic
-  m_TagString: bullet
+  m_TagString: Bullet2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77,6 +78,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &114369397586394676
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1788165390446082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bb0203c2349ad749a60ad7edbbb87e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212394494397613788
 SpriteRenderer:
   m_ObjectHideFlags: 1
