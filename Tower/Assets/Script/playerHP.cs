@@ -35,7 +35,7 @@ public class playerHP : MonoBehaviour {
             hpText.GetComponent<Text>().text = "HP: " + hp;
             if (hp <= 0)
             {
-                SceneManager.LoadScene("lose");
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
 
         }

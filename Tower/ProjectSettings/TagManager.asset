@@ -14,6 +14,7 @@ TagManager:
   - Heart
   - Bullet2
   - coin
+  - Win
   layers:
   - Default
   - TransparentFX
